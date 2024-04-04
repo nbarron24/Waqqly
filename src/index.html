@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagg.ly</title>
+    <style>
+        body{background-color: #013F56; display: flex; justify-content: center; flex-wrap: wrap;}
+        h1{text-align: center; font-size: 16pt; font-weight: bold;font-family: Arial; color: #D5D1D0;}
+        input{font-size: 14pt; font-family: Arial; width: 400px; font-family: Arial; background-color: #D5D1D0;}
+        form{text-align: center;}
+        .form-container{padding: 40px; text-align: center;}
+        button{font-size: 14pt; width: 150px; margin: 5px; font-family: Arial; background-color: #D5D1D0;}
+        button:hover{background-color: #A7BCBD;}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Register your dog below.</h1>
+        <form action="https://waggly-functions.azurewebsites.net/api/registerdog" method="get">
+            <input type="text" name="dogsname" placeholder="Dogs Name" required><br><br>
+            <input type="text" name="dogsbreed" placeholder="Dogs Breed" required><br><br>
+            <input type="number" name="dogsage" placeholder="Dogs Age" required><br><br>
+            <input type="text" name="dogsgender" placeholder="Dogs Gender" required><br><br>
+            <input type="text" name="ownersforename" placeholder="Owners Forename" required><br><br>
+            <input type="text" name="ownerssurname" placeholder="Owners Surname" required><br><br>
+            <input type="tel" name="ownersphonenumber" placeholder="Owners Phone Number" required><br><br>
+            <input type="email" name="ownersemailaddress" placeholder="Owners Email Address" required><br><br>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="form-container">
+        <h1>Register as a dog walker below.</h1>
+        <form action="https://waggly-functions.azurewebsites.net/api/registerwalker" method="get">
+            <input type="text" name="forename" placeholder="Forename" required><br><br>
+            <input type="text" name="surname" placeholder="Surname" required><br><br>
+            <input type="text" name="city" placeholder="City" required><br><br>
+            <input type="text" name="county" placeholder="County" required><br><br>
+            <input type="tel" name="phonenumber" placeholder="Phone Number" required><br><br>
+            <input type="email" name="emailaddress" placeholder="Email Address" required><br><br>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</html>
