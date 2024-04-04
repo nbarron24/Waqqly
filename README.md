@@ -42,7 +42,7 @@ This README file will guide you through the steps on how to setup the Waqq.ly cl
     * Build: Custom
     * Application Code Location: /src
     * Build Location: /src
-3.	Open Explorer within Visual Studio Code > Expand Waqqly > Expland .github > Copy the app_location and api_location lines (should be lines 31 and 32) > Paste both before the line, action: “Close” (should be the last line).
+3.	Open Explorer within Visual Studio Code > Expand Waqqly > Expland .github > Copy the app_location line (should be lines 31) > Paste before the line, action: “Close” (should be the last line).
 4.	Go to File > Save.
 5.	Go to Source Control > Commit > Select Save All & Commit Changes > Sync Changes.
 
