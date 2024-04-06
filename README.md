@@ -42,7 +42,7 @@ This README file will guide you through the steps on how to setup the Waqq.ly cl
     * Build: Custom
     * Application Code Location: /src
     * Build Location: /src
-3.	Open Explorer within Visual Studio Code > Expand Waqqly > Expland .github > Copy the app_location line (should be lines 31) > Paste before the line, action: “Close” (should be the last line).
+3.	Open Explorer within Visual Studio Code > Expand Waqqly > Expland .github > Click "azure-static-web-apps..." > Copy the app_location line (should be line 31) > Paste before the line (on a new line), action: “Close” (should be the last line).
 4.	Go to File > Save.
 5.	Go to Source Control > Commit > Select Save All & Commit Changes > Sync Changes.
 
@@ -57,7 +57,7 @@ This README file will guide you through the steps on how to setup the Waqq.ly cl
     * Authorisation: ANONYMOUS
 2.	Open any web browser and navigate to https://github.com/nbarron24/Waqqly.
 3.	Open the api Folder > Open function_app.py > Copy the contents of the function_app.py file.
-4.	Open Visual Studio Code > Open Explorer > Expand Waqqly > Expand api > Paste the contents of your clipboard into the function_app.py file.
+4.	Open Visual Studio Code > Open Explorer > Expand Waqqly > Expand api > Delete the existing contents of the function_app.py file > Paste the contents of your clipboard into the function_app.py file.
 5.	Select Azure (A) within Visual Studio Code.
 6.	Hover your cursor within Resources and select the “+” button (Create Resource…) > Type and Select “Create Function App in Azure” > Use the following details:
     * Name: Waqqly-Functions
@@ -78,8 +78,8 @@ This README file will guide you through the steps on how to setup the Waqq.ly cl
     * Partition Key: /id
 4.	Under Resources, right click waqqly-db > Copy connection string.
 5.	Go to View > Command Palette > Type and select Azure Functions: Add New Setting > select Waqqly-Functions > Use the following details:
-App Setting Name: CosmosDbConnectionSetting
-Value: Paste Connection String
+    * App Setting Name: CosmosDbConnectionSetting
+    * Value: Paste Connection String
 6.	Go to View > Command Palette > Type and select Azure Functions: Download Remote Settings > Select Waqqly-Functions > Select Yes to all.
 
 ## Get Azure Functions URL
